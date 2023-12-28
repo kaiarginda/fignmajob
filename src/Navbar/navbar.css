@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  font-family: "Manrope";
+  font-weight: 500;
+}
+.slider-container {
+  overflow: hidden;
+}
+
+.text-white li {
+  /* min-width: 100%; */
+  box-sizing: border-box;
+}
+
+/* Add a media query for small screens */
+@media only screen and (max-width: 768px) {
+  .text-white li {
+    min-width: 100%;
+  }
+}
+
+/* Add this to your existing CSS file */
+.arrow-icon {
+  cursor: pointer;
+  font-size: 24px; /* Adjust the font size as needed */
+  color: white; /* Adjust the color as needed */
+  margin: 0 10px; /* Adjust the margin as needed */
+}
+
+.arrow-icon:disabled {
+  opacity: 0.5; /* Adjust the opacity for disabled state */
+  cursor: not-allowed;
+}
+
+.fl {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+}
